@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "path": "default_view",
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "person.oscar_david_valencia_alvarez"
+              ]
+            },
+            {
+              "type": "weather-forecast",
+              "entity": "weather.forecast_casa",
+              "show_forecast": false
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.esp32_dht22_temperatura"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.esp32_dht22_humedad"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

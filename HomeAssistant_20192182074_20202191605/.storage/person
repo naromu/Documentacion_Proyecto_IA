@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "oscar_david_valencia_alvarez",
+        "name": "Oscar David Valencia Alvarez",
+        "user_id": "7690a74056914068b005f7f79ad8a10d",
+        "device_trackers": [
+          "device_tracker.nokia_g21",
+          "device_tracker.2410fpcc5g"
+        ]
+      }
+    ]
+  }
+}

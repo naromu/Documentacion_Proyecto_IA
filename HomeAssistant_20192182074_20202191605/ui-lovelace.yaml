@@ -1,0 +1,196 @@
+title: Dashboard ESP32 DHT22
+views:
+  - title: Overview
+    path: overview
+    icon: mdi:home
+    cards:
+      # Resumen con valores actuales
+      - type: entities
+        title: "Estado Actual del Sensor DHT22"
+        entities:
+          - entity: sensor.esp32_dht22_temperatura
+            name: "🌡️ Temperatura"
+          - entity: sensor.esp32_dht22_humedad
+            name: "💧 Humedad"
+        state_color: true
+      
+      # Gráficas rápidas lado a lado
+      - type: grid
+        columns: 2
+        cards:
+          - type: history-graph
+            title: "Temperatura (1h)"
+            entities:
+              - entity: sensor.esp32_dht22_temperatura
+                name: Temp
+            hours_to_show: 1
+            refresh_interval: 5
+            
+          - type: history-graph
+            title: "Humedad (1h)"
+            entities:
+              - entity: sensor.esp32_dht22_humedad
+                name: Humid
+            hours_to_show: 1
+            refresh_interval: 5
+      
+      # Gráfica combinada
+      - type: history-graph
+        title: "Tendencia Combinada (1 hora)"
+        entities:
+          - entity: sensor.esp32_dht22_temperatura
+            name: Temperatura (°C)
+          - entity: sensor.esp32_dht22_humedad
+            name: Humedad (%)
+        hours_to_show: 1
+        refresh_interval: 5
+
+  - title: Gráficas Detalladas
+    path: graficas
+    icon: mdi:chart-line
+    cards:
+      # Diferentes períodos de tiempo
+      - type: grid
+        columns: 1
+        cards:
+          - type: history-graph
+            title: "Temperatura - Última 1 hora"
+            entities:
+              - entity: sensor.esp32_dht22_temperatura
+                name: Temperatura
+            hours_to_show: 1
+            refresh_interval: 5
+          
+          - type: history-graph
+            title: "Temperatura - Últimas 3 horas"
+            entities:
+              - entity: sensor.esp32_dht22_temperatura
+                name: Temperatura
+            hours_to_show: 3
+            refresh_interval: 10
+          
+          - type: history-graph
+            title: "Temperatura - Últimas 6 horas"
+            entities:
+              - entity: sensor.esp32_dht22_temperatura
+                name: Temperatura
+            hours_to_show: 6
+            refresh_interval: 15
+
+      - type: grid
+        columns: 1
+        cards:
+          - type: history-graph
+            title: "Humedad - Última 1 hora"
+            entities:
+              - entity: sensor.esp32_dht22_humedad
+                name: Humedad
+            hours_to_show: 1
+            refresh_interval: 5
+          
+          - type: history-graph
+            title: "Humedad - Últimas 3 horas"
+            entities:
+              - entity: sensor.esp32_dht22_humedad
+                name: Humedad
+            hours_to_show: 3
+            refresh_interval: 10
+          
+          - type: history-graph
+            title: "Humedad - Últimas 6 horas"
+            entities:
+              - entity: sensor.esp32_dht22_humedad
+                name: Humedad
+            hours_to_show: 6
+            refresh_interval: 15
+
+  - title: Tiempo Real
+    path: tiempo-real
+    icon: mdi:clock-fast
+    cards:
+      # Gráficas de tiempo real (últimos 30 minutos)
+      - type: grid
+        columns: 2
+        cards:
+          - type: history-graph
+            title: "Temperatura - Últimos 30 min"
+            entities:
+              - entity: sensor.esp32_dht22_temperatura
+                name: Temperatura
+            hours_to_show: 0.5
+            refresh_interval: 3
+            
+          - type: history-graph
+            title: "Humedad - Últimos 30 min"
+            entities:
+              - entity: sensor.esp32_dht22_humedad
+                name: Humedad
+            hours_to_show: 0.5
+            refresh_interval: 3
+      
+      # Gráfica combinada de 15 minutos
+      - type: history-graph
+        title: "Monitoreo Tiempo Real (15 minutos)"
+        entities:
+          - entity: sensor.esp32_dht22_temperatura
+            name: Temperatura (°C)
+          - entity: sensor.esp32_dht22_humedad
+            name: Humedad (%)
+        hours_to_show: 0.25
+        refresh_interval: 3
+      
+      # Valores instantáneos
+      - type: grid
+        columns: 2
+        cards:
+          - type: sensor
+            entity: sensor.esp32_dht22_temperatura
+            name: "🌡️ Temperatura"
+            graph: line
+          - type: sensor
+            entity: sensor.esp32_dht22_humedad
+            name: "💧 Humedad"
+            graph: line
+
+  - title: Estadísticas
+    path: estadisticas
+    icon: mdi:chart-bar
+    cards:
+      # Estadísticas detalladas
+      - type: statistics-graph
+        title: "Estadísticas por Horas - Últimas 24h"
+        entities:
+          - sensor.esp32_dht22_temperatura
+          - sensor.esp32_dht22_humedad
+        days_to_show: 1
+        period: hour
+        stat_types:
+          - mean
+          - min
+          - max
+      
+      # Medidores/Gauges
+      - type: grid
+        columns: 2
+        cards:
+          - type: gauge
+            title: "Temperatura Actual"
+            entity: sensor.esp32_dht22_temperatura
+            min: 0
+            max: 50
+            needle: true
+            severity:
+              green: 0
+              yellow: 25
+              red: 35
+          
+          - type: gauge
+            title: "Humedad Actual"
+            entity: sensor.esp32_dht22_humedad
+            min: 0
+            max: 100
+            needle: true
+            severity:
+              green: 30
+              yellow: 70
+              red: 85 

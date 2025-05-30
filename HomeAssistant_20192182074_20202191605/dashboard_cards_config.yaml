@@ -1,0 +1,162 @@
+# ========================================
+# CONFIGURACIÓN DE TARJETAS PARA DASHBOARD
+# ========================================
+# Copia y pega estas tarjetas en tu dashboard de Home Assistant
+
+# TARJETA 1: Panel de Control Principal
+type: vertical-stack
+cards:
+  - type: horizontal-stack
+    cards:
+      # Temperatura y Humedad
+      - type: sensor
+        entity: sensor.esp32_dht22_temperatura
+        name: Temperatura
+        icon: mdi:thermometer
+        graph: line
+      - type: sensor
+        entity: sensor.esp32_dht22_humedad
+        name: Humedad
+        icon: mdi:water-percent
+        graph: line
+  
+  # Controles de Dispositivos
+  - type: horizontal-stack
+    cards:
+      - type: button
+        entity: switch.esp32_bombilla
+        name: Bombilla
+        icon: mdi:lightbulb
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+        show_state: true
+      - type: button
+        entity: switch.esp32_ventilador
+        name: Ventilador
+        icon: mdi:fan
+        tap_action:
+          action: toggle
+        hold_action:
+          action: more-info
+        show_state: true
+
+---
+
+# TARJETA 2: Tarjeta de Estado Compacta
+type: entities
+title: "Control Climático ESP32"
+entities:
+  - entity: sensor.esp32_dht22_temperatura
+    name: "Temperatura"
+    icon: mdi:thermometer
+  - entity: sensor.esp32_dht22_humedad
+    name: "Humedad"
+    icon: mdi:water-percent
+  - type: divider
+  - entity: switch.esp32_bombilla
+    name: "Bombilla (Calefacción)"
+    icon: mdi:lightbulb
+  - entity: switch.esp32_ventilador
+    name: "Ventilador"
+    icon: mdi:fan
+
+---
+
+# TARJETA 3: Gráfico Histórico
+type: history-graph
+title: "Historial de Temperatura y Humedad"
+entities:
+  - sensor.esp32_dht22_temperatura
+  - sensor.esp32_dht22_humedad
+hours_to_show: 24
+refresh_interval: 60
+
+---
+
+# TARJETA 4: Tarjeta de Estado con Indicadores
+type: glance
+title: "Estado del Sistema"
+entities:
+  - entity: sensor.esp32_dht22_temperatura
+    name: "Temp"
+  - entity: sensor.esp32_dht22_humedad
+    name: "Humedad"
+  - entity: switch.esp32_bombilla
+    name: "Bombilla"
+  - entity: switch.esp32_ventilador
+    name: "Ventilador"
+columns: 4
+show_name: true
+show_state: true
+
+---
+
+# TARJETA 5: Panel de Control Avanzado con Gauge
+type: vertical-stack
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: gauge
+        entity: sensor.esp32_dht22_temperatura
+        name: Temperatura
+        unit: "°C"
+        min: 0
+        max: 50
+        severity:
+          green: 20
+          yellow: 28
+          red: 35
+      - type: gauge
+        entity: sensor.esp32_dht22_humedad
+        name: Humedad
+        unit: "%"
+        min: 0
+        max: 100
+        severity:
+          green: 40
+          yellow: 70
+          red: 80
+  
+  - type: horizontal-stack
+    cards:
+      - type: entity
+        entity: switch.esp32_bombilla
+        name: "Bombilla"
+        icon: mdi:lightbulb
+        state_color: true
+      - type: entity
+        entity: switch.esp32_ventilador
+        name: "Ventilador"
+        icon: mdi:fan
+        state_color: true
+
+---
+
+# TARJETA 6: Tarjeta Condicional (Solo muestra cuando hay alertas)
+type: conditional
+conditions:
+  - entity: sensor.esp32_dht22_temperatura
+    state_not: "unavailable"
+card:
+  type: markdown
+  content: |
+    ## 🌡️ Estado del Sistema Climático
+    
+    **Temperatura:** {{ states('sensor.esp32_dht22_temperatura') }}°C
+    **Humedad:** {{ states('sensor.esp32_dht22_humedad') }}%
+    
+    **Dispositivos:**
+    - Bombilla: {{ states('switch.esp32_bombilla') }}
+    - Ventilador: {{ states('switch.esp32_ventilador') }}
+    
+    {% if states('sensor.esp32_dht22_temperatura')|float < 20 %}
+    ❄️ **Temperatura baja** - Bombilla activada automáticamente
+    {% elif states('sensor.esp32_dht22_temperatura')|float > 28 %}
+    🔥 **Temperatura alta** - Ventilador activado automáticamente
+    {% endif %}
+    
+    {% if states('sensor.esp32_dht22_humedad')|float > 75 %}
+    💧 **Humedad alta** - Ventilador activado para deshumidificar
+    {% endif %} 

@@ -1,0 +1,62 @@
+title: Dashboard Avanzado ESP32
+views:
+  - title: Gráficas Detalladas
+    path: graficas-detalladas
+    icon: mdi:chart-timeline-variant
+    cards:
+      # Gráfica de líneas para temperatura con diferentes períodos
+      - type: grid
+        cards:
+          - type: history-graph
+            title: "Temperatura - Últimas 6 horas"
+            entities:
+              - entity: sensor.esp32_dht22_temperatura
+                name: Temperatura
+            hours_to_show: 6
+            refresh_interval: 5
+            
+          - type: history-graph
+            title: "Humedad - Últimas 6 horas"
+            entities:
+              - entity: sensor.esp32_dht22_humedad
+                name: Humedad
+            hours_to_show: 6
+            refresh_interval: 5
+      
+      # Gráfica combinada
+      - type: history-graph
+        title: "Tendencias de Temperatura y Humedad (24h)"
+        entities:
+          - entity: sensor.esp32_dht22_temperatura
+            name: Temperatura (°C)
+          - entity: sensor.esp32_dht22_humedad
+            name: Humedad (%)
+        hours_to_show: 24
+        refresh_interval: 10
+      
+      # Estadísticas
+      - type: statistics-graph
+        title: "Estadísticas Semanales"
+        entities:
+          - sensor.esp32_dht22_temperatura
+          - sensor.esp32_dht22_humedad
+        days_to_show: 7
+        period: hour
+        stat_types:
+          - mean
+          - min
+          - max
+      
+      # Valores actuales con iconos
+      - type: horizontal-stack
+        cards:
+          - type: sensor
+            entity: sensor.esp32_dht22_temperatura
+            name: Temperatura
+            icon: mdi:thermometer
+            graph: line
+          - type: sensor
+            entity: sensor.esp32_dht22_humedad
+            name: Humedad
+            icon: mdi:water-percent
+            graph: line 

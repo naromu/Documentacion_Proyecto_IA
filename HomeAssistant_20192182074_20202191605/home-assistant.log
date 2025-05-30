@@ -1,0 +1,246 @@
+2025-05-29 06:30:47.400 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=1 from 2025-05-29 04:52:52.787598)
+2025-05-29 06:30:51.944 WARNING (MainThread) [homeassistant.helpers.config_validation] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 06:31:31.891 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 06:34:18.087 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-29 06:46:15.146 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 172.17.0.1 (172.17.0.1). Requested URL: '/auth/token'. (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+2025-05-29 06:46:15.366 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 172.17.0.1 (172.17.0.1). Requested URL: '/auth/token'. (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+2025-05-29 06:46:15.436 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [140267083161472] from 172.17.0.1 (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36): Disconnected: Received close message during auth phase
+2025-05-29 06:53:52.691 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 172.17.0.1 (172.17.0.1). Requested URL: '/auth/login_flow/5c099c7c0e0363fa00d3ebac8d1bc41e'. (Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36)
+2025-05-29 07:31:25.218 WARNING (MainThread) [homeassistant.components.mqtt.client] No ACK from MQTT server in 10 seconds (mid: 74)
+2025-05-29 07:31:35.218 WARNING (MainThread) [homeassistant.components.mqtt.client] No ACK from MQTT server in 10 seconds (mid: 75)
+2025-05-29 07:40:34.129 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-29 07:50:30.581 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:50:30.595 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:50:30.650 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:50:30.651 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:50:30.653 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:50:30.654 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:50:30.656 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:50:30.656 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:50:30.657 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:50:30.658 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:50:30.658 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:50:30.659 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:52:20.526 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:52:20.527 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:52:20.584 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:52:20.584 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:53:20.542 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:53:20.542 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:53:20.607 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:53:20.607 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:54:30.589 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:54:30.594 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:54:30.638 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:54:30.638 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:56:40.571 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:56:40.573 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:56:40.621 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:56:40.622 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:57:25.266 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:57:25.268 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:57:25.328 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:57:25.328 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:57:50.874 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:57:50.876 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:57:51.134 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:57:51.135 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:57:58.042 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:57:58.043 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 07:57:58.230 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 07:57:58.231 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:03:29.477 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-29 08:04:03.317 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 08:04:07.115 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 08:08:16.356 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:08:16.357 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:08:16.365 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:08:16.366 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:08:16.380 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:08:16.380 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:08:16.430 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:08:16.431 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:08:16.432 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:08:16.433 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:08:16.433 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:08:16.434 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:08:54.541 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-05-29 08:11:44.143 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 08:11:46.413 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:11:46.415 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:11:46.487 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:11:46.488 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:11:46.490 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:11:46.490 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:11:46.492 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:11:46.493 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:12:26.948 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:12:26.949 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:12:27.000 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:12:27.000 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:24:51.573 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:24:51.587 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:24:51.590 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:24:51.591 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:26:27.069 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:26:27.070 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:26:27.134 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:26:27.135 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:26:32.021 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:26:32.022 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:26:32.078 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:26:32.079 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:26:32.080 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:26:32.081 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:26:32.082 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:26:32.083 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:27:36.725 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:27:36.731 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:27:36.788 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:27:36.789 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:30:42.501 ERROR (SyncWorker_2) [annotatedyaml.loader] while parsing a block collection
+  in "/config/automations.yaml", line 1, column 2
+expected <block end>, but found '<block mapping start>'
+  in "/config/automations.yaml", line 2, column 3
+2025-05-29 08:30:42.505 ERROR (MainThread) [homeassistant.components.homeassistant] The system cannot reload because the configuration is not valid: Error loading /config/configuration.yaml: while parsing a block collection
+  in "/config/automations.yaml", line 1, column 2
+expected <block end>, but found '<block mapping start>'
+  in "/config/automations.yaml", line 2, column 3
+2025-05-29 08:30:42.505 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140267081587168] Unexpected exception
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 250, in handle_call_service
+    response = await hass.services.async_call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2802, in async_call
+    response_data = await coro
+                    ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2845, in _execute_service
+    return await target(service_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 1110, in _async_admin_handler
+    await result
+  File "/usr/src/homeassistant/homeassistant/components/homeassistant/__init__.py", line 355, in async_handle_reload_all
+    raise HomeAssistantError(
+    ...<2 lines>...
+    )
+homeassistant.exceptions.HomeAssistantError: Cannot quick reload all YAML configurations because the configuration is not valid: Error loading /config/configuration.yaml: while parsing a block collection
+  in "/config/automations.yaml", line 1, column 2
+expected <block end>, but found '<block mapping start>'
+  in "/config/automations.yaml", line 2, column 3
+2025-05-29 08:30:44.978 ERROR (SyncWorker_5) [annotatedyaml.loader] while parsing a block collection
+  in "/config/automations.yaml", line 1, column 2
+expected <block end>, but found '<block mapping start>'
+  in "/config/automations.yaml", line 2, column 3
+2025-05-29 08:33:05.655 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorDNSError'
+2025-05-29 08:33:05.656 ERROR (MainThread) [homeassistant.components.met.coordinator] Error fetching met data: Update failed: 
+2025-05-29 08:35:03.359 WARNING (MainThread) [homeassistant.components.config] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 08:35:07.815 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 08:35:11.738 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:35:11.739 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:35:11.794 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:35:11.795 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:35:21.929 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:35:21.930 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:35:22.358 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:35:22.359 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:02.528 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:02.529 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:02.593 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:02.594 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:12.732 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:12.734 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:12.901 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:12.902 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:22.638 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:22.639 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:22.694 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:22.695 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:42.605 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:42.606 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:37:42.613 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:37:42.615 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:38:47.636 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:38:47.638 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:38:47.737 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:38:47.738 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:39:07.981 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:39:07.982 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:39:08.607 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:39:08.608 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:44:17.834 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:44:17.835 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:44:17.885 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:44:17.885 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:45:32.781 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:45:32.782 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:45:32.836 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:45:32.838 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:45:48.038 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:45:48.039 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:45:48.281 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:45:48.282 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:46:03.051 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:46:03.052 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:46:03.116 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:46:03.117 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:46:42.744 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:46:42.745 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:46:42.796 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:46:42.797 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:47:52.682 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:47:52.683 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:47:52.753 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:47:52.754 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.129 WARNING (MainThread) [homeassistant.components.homeassistant] The 'include' option near /config/configuration.yaml:25 is deprecated, please remove it from your configuration
+2025-05-29 08:48:52.755 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.756 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:48:52.812 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.813 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:48:52.816 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.817 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:48:52.819 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.820 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:48:52.821 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.822 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:48:52.823 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:48:52.824 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:55:02.746 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'temperature' when rendering '{{ value_json.temperature }}'
+2025-05-29 08:55:02.748 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'humidity' when rendering '{{ value_json.humidity }}'
+2025-05-29 08:55:07.401 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'temperature' when rendering '{{ value_json.temperature }}'
+2025-05-29 08:55:07.401 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'humidity' when rendering '{{ value_json.humidity }}'
+2025-05-29 08:55:51.025 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'temperature' when rendering '{{ value_json.temperature }}'
+2025-05-29 08:55:51.026 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'humidity' when rendering '{{ value_json.humidity }}'
+2025-05-29 08:58:21.196 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:58:21.199 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:58:21.244 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:58:21.245 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 08:58:31.581 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'temperature' when rendering '{{ value_json.temperature }}'
+2025-05-29 08:58:31.582 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'dict object' has no attribute 'humidity' when rendering '{{ value_json.humidity }}'
+2025-05-29 08:59:03.323 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 08:59:03.324 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:00:36.091 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:00:36.092 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:00:36.202 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:00:36.203 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:00:45.939 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:00:45.939 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:01:33.005 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:01:33.007 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:01:33.906 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:01:33.907 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:01:35.124 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:01:35.125 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:01:36.056 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:01:36.056 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:01:37.255 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:01:37.256 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:04:21.412 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:04:21.413 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:04:39.956 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:04:39.957 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:04:39.966 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.temperature }}'
+2025-05-29 09:04:39.967 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.humidity }}'
+2025-05-29 09:04:46.566 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.

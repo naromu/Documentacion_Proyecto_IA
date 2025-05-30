@@ -1,0 +1,113 @@
+- id: 'bombilla_temperatura_baja'
+  alias: 'Encender bombilla cuando temperatura baja'
+  description: 'Enciende la bombilla cuando la temperatura es menor a 20°C'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.esp32_dht22_temperatura
+      below: 24.2
+  condition: []
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'sensor/temperatura'
+        payload: "{'bombilla':'ON'}"
+    - service: switch.turn_on
+      target:
+        entity_id: switch.esp32_bombilla
+  mode: single
+
+- id: 'bombilla_temperatura_normal'
+  alias: 'Apagar bombilla cuando temperatura normal'
+  description: 'Apaga la bombilla cuando la temperatura es mayor a 22°C'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.esp32_dht22_temperatura
+      above: 24.8
+  condition: []
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'sensor/temperatura'
+        payload: "{'bombilla':'OFF'}"
+    - service: switch.turn_off
+      target:
+        entity_id: switch.esp32_bombilla
+  mode: single
+
+- id: 'ventilador_temperatura_alta'
+  alias: 'Encender ventilador cuando temperatura alta'
+  description: 'Enciende el ventilador cuando la temperatura es mayor a 28°C'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.esp32_dht22_temperatura
+      above: 25.2
+  condition: []
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'sensor/temperatura'
+        payload: "{'ventilador':'ON'}"
+    - service: switch.turn_on
+      target:
+        entity_id: switch.esp32_ventilador
+  mode: single
+
+- id: 'ventilador_temperatura_normal'
+  alias: 'Apagar ventilador cuando temperatura normal'
+  description: 'Apaga el ventilador cuando la temperatura es menor a 26°C'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.esp32_dht22_temperatura
+      below: 24.6
+  condition:
+    - condition: numeric_state
+      entity_id: sensor.esp32_dht22_humedad
+      below: 70
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'sensor/temperatura'
+        payload: "{'ventilador':'OFF'}"
+    - service: switch.turn_off
+      target:
+        entity_id: switch.esp32_ventilador
+  mode: single
+
+- id: 'ventilador_humedad_alta'
+  alias: 'Encender ventilador cuando humedad alta'
+  description: 'Enciende el ventilador cuando la humedad es mayor a 75%'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.esp32_dht22_humedad
+      above: 54
+  condition: []
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'sensor/temperatura'
+        payload: "{'ventilador':'ON'}"
+    - service: switch.turn_on
+      target:
+        entity_id: switch.esp32_ventilador
+  mode: single
+
+- id: 'ventilador_humedad_normal'
+  alias: 'Apagar ventilador cuando humedad normal'
+  description: 'Apaga el ventilador cuando la humedad es menor a 65%'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.esp32_dht22_humedad
+      below: 50
+  condition:
+    - condition: numeric_state
+      entity_id: sensor.esp32_dht22_temperatura
+      below: 28
+  action:
+    - service: mqtt.publish
+      data:
+        topic: 'sensor/temperatura'
+        payload: "{'ventilador':'OFF'}"
+    - service: switch.turn_off
+      target:
+        entity_id: switch.esp32_ventilador
+  mode: single

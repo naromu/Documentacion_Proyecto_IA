@@ -1,0 +1,75 @@
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Lovelace dashboard configuration
+lovelace:
+  mode: yaml
+
+# Database configuration for storing sensor history
+recorder:
+  db_url: sqlite:///homeassistant.db
+  purge_keep_days: 30
+  include:
+    entities:
+      - sensor.esp32_dht22_temperatura
+      - sensor.esp32_dht22_humedad
+      - switch.esp32_bombilla
+      - switch.esp32_ventilador
+
+# History configuration
+history:
+  include:
+    entities:
+      - sensor.esp32_dht22_temperatura
+      - sensor.esp32_dht22_humedad
+      - switch.esp32_bombilla
+      - switch.esp32_ventilador
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+mqtt:
+  sensor:
+    - name: "ESP32 DHT22 Temperatura"
+      unique_id: "esp32_dht22_temperature"
+      state_topic: "sensor/temperatura"
+      unit_of_measurement: "°C"
+      value_template: "{{ value_json.temperature }}"
+      device_class: "temperature"
+      icon: "mdi:thermometer"
+      state_class: "measurement"
+    - name: "ESP32 DHT22 Humedad"
+      unique_id: "esp32_dht22_humidity"
+      state_topic: "sensor/temperatura"
+      unit_of_measurement: "%"
+      value_template: "{{ value_json.humidity }}"
+      device_class: "humidity"
+      icon: "mdi:water-percent"
+      state_class: "measurement"
+  
+  switch:
+    - name: "ESP32 Bombilla"
+      unique_id: "esp32_bombilla"
+      command_topic: "sensor/temperatura"
+      payload_on: "{'bombilla':'ON'}"
+      payload_off: "{'bombilla':'OFF'}"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: true
+      retain: false
+      icon: "mdi:lightbulb"
+    - name: "ESP32 Ventilador"
+      unique_id: "esp32_ventilador"
+      command_topic: "sensor/temperatura"
+      payload_on: "{'ventilador':'ON'}"
+      payload_off: "{'ventilador':'OFF'}"
+      state_on: "ON"
+      state_off: "OFF"
+      optimistic: true
+      retain: false
+      icon: "mdi:fan"
