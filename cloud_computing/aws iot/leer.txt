@@ -1,0 +1,3 @@
+endpoint: a3l16r67jumj61-ats.iot.us-east-1.amazonaws.com
+
+video guía: https://youtu.be/W3XVYiZN610?si=5rqXpq3Qug7OLR24
